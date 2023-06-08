@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container {
+    /* background: linear-gradient(180.14deg, rgba(217, 217, 217, 0) 4.92%, #FF9D9D 99.88%); */
+    background: linear-gradient(180.14deg, #FF9D9D 4.92%, rgba(217, 217, 217, 0) 99.88%);
+}
+
+#container h1 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 800;
+    font-family: 'Inter', sans-serif;
+    letter-spacing: 2;
+    padding: 2rem;
+}
+
+.content {
+    margin: 1rem auto;
+    max-width: 25%;
+}
+
+/* Calculation box css start */
+
+.content .calculations {
+    background-color: #F7B8B8;
+    border-radius: 20px 20px 0px 0px;
+    height: 15%;
+    padding: 1.5rem;
+    text-align: end;
+}
+
+.content .calculations #upperBox {
+    font-size: 18px;
+}
+
+.content .calculations #lowerBox {
+    font-size: 25px;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Calculation box css end */
+
+.content .numbers {
+    background: #FFF5F5;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 0 0 20px 20px;
+    padding: 1rem 2rem;
+}
+
+.content .numbers .all-items {
+    display: flex;
+    flex-direction: column;
+}
+
+.content .numbers .all-items .row {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+}
+
+.content .numbers .all-items .row .col {
+    font-size: 18px;
+    border-radius: 50%;
+    background: rgba(254, 248, 248, 0.81);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: none;
+    padding: 10px;
+    margin: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.content .numbers .all-items .first-row .col {
+    margin: 0.5rem 0.7rem;
+    font-size: 16px;
+}
+
+.content .numbers .all-items .row .equal {
+    background-color: #F7B8B8;
+    width: 6rem;
+    border-radius: 25%;
+}
+
+.content .numbers .all-items .row .dot {
+    font-weight: 800;
+}
+
+.love {
+    text-align: center;
+    padding: 1rem 0 1rem 0;
+}
+
+/* Media query for mobile */
+
+@media (max-width: 499px) {
+    .content {
+        max-width: 80%;
+    } 
+}
+
+/* Media query for tabs */
+
+@media (min-width: 500px) and (max-width: 1200px) {
+    #container .content {
+        max-width: 50%;
+    } 
+}
+
+/* Media query for large devices */
+
+@media (min-width: 1800px) {
+    .content {
+        max-width: 15%;
+    } 
+}

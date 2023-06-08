@@ -1,0 +1,67 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+
+    <!-- Favicon link -->
+    <link rel="shortcut icon" href="calculator-solid.svg" type="image/x-icon">
+    
+    <!-- Css stylesheet link -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font awesome link -->
+    <script src="https://kit.fontawesome.com/d78a6b9d10.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section id="container">
+        <h1>Let's Calculate</h1>
+        <div class="content">
+            <div class="calculations">
+                <pre id="upperBox"></pre>
+                <pre id="lowerBox">0</pre>
+            </div>
+            <div class="numbers">
+                <div class="all-items">
+                    <div class="row first-row">
+                        <button class="col" onclick="pressAllClear()">AC</button>
+                        <button class="col" onclick="pressNum(this)">00</i></button>
+                        <button class="col" onclick="pressClear()">del</button>
+                        <button class="col" onclick="pressOperator(this)">/</button>
+                    </div>
+                    <div class="row">
+                        <button class="col" onclick="pressNum(this)">7</i></button>
+                        <button class="col" onclick="pressNum(this)">8</button>
+                        <button class="col" onclick="pressNum(this)">9</button>
+                        <button class="col" onclick="pressOperator(this)">x</button>
+                    </div>
+                    <div class="row">
+                        <button class="col" onclick="pressNum(this)">4</button>
+                        <button class="col" onclick="pressNum(this)">5</button>
+                        <button class="col" onclick="pressNum(this)">6</button>
+                        <button class="col" onclick="pressOperator(this)">-</button>
+                    </div>
+                    <div class="row">
+                        <button class="col" onclick="pressNum(this)">1</button>
+                        <button class="col" onclick="pressNum(this)">2</button>
+                        <button class="col" onclick="pressNum(this)">3</button>
+                        <button class="col" onclick="pressOperator(this)">+</button>
+                    </div>
+                    <div class="row">
+                        <button class="col" onclick="pressNum(this)">0</button>
+                        <button class="col dot" onclick="pressDot()">.</button>
+                        <button class="col equal" onclick="pressEqual()">=</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="love">
+            <p>Made with ❤️ in India.</p>
+        </div>
+    </section>
+
+    <!-- JavaScript Link -->
+    <script src="index.js"></script>
+</body>
+</html>
